@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <xyz.hanks.library.bang.SmallBangView
+        android:id="@+id/like_heart"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/logo_gw2"
+            android:text="Hello World!"/>
+    </xyz.hanks.library.bang.SmallBangView>
+
+
+    <xyz.hanks.library.bang.SmallBangView
+        android:id="@+id/like_text"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:circle_end_color="#ffbc00"
+        app:circle_start_color="#fa9651"
+        app:dots_primary_color="#fa9651"
+        app:dots_secondary_color="#ffbc00">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="GZeinNumer"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+    </xyz.hanks.library.bang.SmallBangView>
+</LinearLayout>
